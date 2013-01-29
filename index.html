@@ -2,8 +2,15 @@
 <html>
 <head>
 	<title>no likey, no lighty!</title>
+	<script type="text/javascript">
+
+		var buttonClicked = function(){
+			document.body.style.cssText = 'background-color: red;'
+			document.getElementById('buzz').play();
+		}
+	</script>
 </head>
 <body>
-	<a onclick="this.firstChild.play()"><audio src="buzz.wav"></audio><img src="red_button.jpeg"/></a>	
+	<a onclick="buttonClicked()"><audio id="buzz" src="buzz.wav"></audio><img src="red_button.jpeg"/></a>	
 </body>
 </html>
